@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Montserrat:wght@500&family=PT+Sans&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Inconsolata:wght@500&family=Montserrat:wght@500&family=PT+Sans&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=IBM+Plex+Sans:wght@300&family=Inconsolata:wght@500&family=Montserrat:wght@500&family=Noto+Sans:wght@300&family=PT+Sans&family=Poppins&family=Quicksand:wght@500&family=Raleway:wght@300&family=Sofia+Sans+Condensed&family=Ubuntu&display=swap');
+
+
+body{
+     overflow-x: hidden; 
+} 
+
+
+#Web-Head{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.nav-item a{
+    font-size: larger;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.nav-item a:hover{
+    text-decoration:underline;
+    font-weight:400;
+}
+
+.loader{
+    position: relative;
+    width: 100vw;
+    margin-top: 70px;
+    background-color: #2a2929;
+    height: 2px;    
+    animation-name: loading;
+    animation-duration: 5s;
+    z-index: -1;
+}
+
+@keyframes loading{
+    0%{
+        background: red;
+        top:0px;
+    }
+
+    25%{
+        background: red;
+        right:550px;
+    }
+
+    75%{
+        background-color: red;
+        right: 350px;
+    }
+
+    100%{
+        background-size: 0px;
+    }
+}
+
+.my-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* margin: 60px 0px 0px 0px;  */
+    height: 145vh;
+    width: auto;
+    background: url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+    background-repeat: no-repeat;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin: 60px 30px; 
+    color: white;   
+    width: 100vw;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+}
+
+.logo{
+    display: flex;
+    margin: 10px;
+    padding: 30px;
+    justify-content: space-evenly;
+}
+
+.logo img{
+    height: 130px;
+    
+}
+
+.logo img:hover{
+    cursor: pointer;
+    transition: 300ms ease-out;
+    height: 140px;
+    /* border-radius: 20px; */
+}
+
+#prod-head{
+    font-family: 'Barlow', sans-serif;
+    margin: 20px 40px;
+    position: sticky;
+}
+
+#prod-head hr{
+    width: 92vw;
+}
+
+.product-cards{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin: 5rem 4rem 3rem 0rem;
+}
+
+
+
+.card{
+    /* padding: 17px 0px 5px; */
+    margin: 20px 50px;
+}
+
+.card2{
+    display: flex;
+    border:1px solid #c1bbbb;
+}
+
+.card-body{
+    /* border: 1px solid black; */
+    margin: 5px;
+    width: 260px;
+    padding: 10px 11px 12px 9px;
+}
+
+img{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    height: 20px;
+    width: auto; 
+    padding:0px 13px 15px;
+}
+
+ 
+
+#product1{
+    width: 260px;
+    height: 200px;
+    /* padding: 5px 20px; */
+    margin: 1px 0px 0px -12px;
+}
+
+#product2{
+    width: 260px;
+    height: 200px;
+    margin: 2px -12px;
+}
+
+#product3{
+    width: 265px;
+    height: 200px;
+    /* padding: 5px; */
+    margin: 7px -14px;  
+}
+
+
+#product4{
+    width: 230px;
+    height: 285px;
+}
+#product5{
+    width: 240px;
+    height: 285px;
+}
+#product6{
+    width: 250px;
+    height: 285px;
+    margin: 2px 5px 10px 0px;
+}
+
+.dev{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: larger;
+}
+
+.dev i{
+    margin: 25px 10px;
+}
+
+.dev a i:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 3788px)  {
+   .my-content{
+    background: url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+}
+
+@media only screen and (min-width:375)and (min-height:667){
+    .body{
+        overflow-x: scroll;
+    }
+
+    .product-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:2492) and (max-height:1920){
+    footer{
+        margin: 20px;
+        background-color: green;
+    }
+}

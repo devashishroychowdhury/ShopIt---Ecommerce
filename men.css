@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Montserrat:wght@500&family=PT+Sans&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Inconsolata:wght@500&family=Montserrat:wght@500&family=PT+Sans&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Inconsolata:wght@500&family=Montserrat:wght@500&family=PT+Sans&family=Raleway:wght@300&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=IBM+Plex+Sans:wght@300&family=Inconsolata:wght@500&family=Montserrat:wght@500&family=PT+Sans&family=Raleway:wght@300&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Exo+2:wght@500&family=IBM+Plex+Sans:wght@300&family=Inconsolata:wght@500&family=Montserrat:wght@500&family=Noto+Sans:wght@300&family=PT+Sans&family=Poppins&family=Quicksand:wght@500&family=Raleway:wght@300;400&family=Sofia+Sans+Condensed&family=Ubuntu&display=swap');
+
+
+body{
+    overflow-x:hidden;
+}
+
+
+#Web-Head{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.nav-item a{
+    font-size: larger;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.nav-item a:hover{
+    text-decoration:underline;
+    font-weight:400;
+}
+
+.loader{
+    position: relative;
+    width: 100vw;
+    margin-top: 70px;
+    background-color: #2a2929;
+    height: 2px;    
+    animation-name: loading;
+    animation-duration: 5s;
+    z-index: -1;
+}
+
+@keyframes loading{
+    0%{
+        background: red;
+        top:0px;
+    }
+
+    25%{
+        background: red;
+        right:550px;
+    }
+
+    75%{
+        background-color: red;
+        right: 350px;
+    }
+
+    100%{
+        background-size: 0px;
+        background-color: black;
+    }
+}
+
+.content{
+    background: url('https://images.pexels.com/photos/6504833/pexels-photo-6504833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    overflow-x: hidden;
+    margin: 0px 0px 0px 0px;
+    height: 45rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    image-rendering:optimizeQuality;
+
+    /* opacity: 0.7; */
+}
+
+.content h2{
+    position: relative;
+    margin: 60px 30px;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.content p{
+    position: relative;
+    margin: 60px 30px;
+    color : rgb(255, 255, 255);
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.content button{
+    font-family: 'Exo 2', sans-serif;
+}
+
+#shoe1{
+    height: 330px;
+}
+
+#shoe2{
+    height: 330px;
+}
+
+#shoe3{
+    height: 330px;
+}
+
+.dev{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: larger;
+}
+
+.dev i{
+    margin: 25px 10px;
+}
+.dev a i:hover{
+    cursor: pointer;
+}
